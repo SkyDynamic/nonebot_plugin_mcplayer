@@ -1,0 +1,2 @@
+mcstatus==9.0.4
+nonebot==1.9.1
