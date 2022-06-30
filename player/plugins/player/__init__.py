@@ -1,4 +1,4 @@
-import json,os
+`import json,os
 
 from mcstatus import JavaServer
 from nonebot.plugin import on_keyword,on_command
@@ -9,7 +9,6 @@ from nonebot.adapters.onebot.v11.event import Event
 from nonebot.adapters.onebot.v11.bot import Bot
 from nonebot.adapters.onebot.v11.message import Message
 
-path = os.getcwd()
 player_list = []
 player = on_keyword(['player','获取玩家列表','玩家'],priority=50)
 bind = on_command("bind", aliases={"绑定"}, priority=5)
