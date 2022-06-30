@@ -1,0 +1,2 @@
+# MCPlayer
+基于NoneBot2的查看MC服务器在线玩家信息与服务器状态的QQbot
