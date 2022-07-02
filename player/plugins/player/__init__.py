@@ -1,4 +1,4 @@
-`import json,os
+import json,os
 
 from mcstatus import JavaServer
 from nonebot.plugin import on_keyword,on_command
