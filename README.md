@@ -4,7 +4,7 @@
 
 <div align="center">
   
-# Nonebot_Plugin_Jrrp
+# Nonebot_Plugin_MCplayer
   
 _✨ 基于OneBot适配器的[NoneBot2](https://v2.nonebot.dev/)查看MC服务器在线玩家信息与服务器状态的插件 ✨_
   
