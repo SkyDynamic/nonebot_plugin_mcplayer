@@ -82,7 +82,6 @@ def writejson(group_id, Server_host, Server_port, Server_name):
     if Server_port != '0':
         server_json = {'server_ip': f'{Server_host}:{Server_port}','Server_Name': f'{Server_name}'}
     alljson = readjson()
-    print(alljson)
     alljson[str(group_id)] = server_json
     with open('src/config.json', 'w', encoding='utf-8') as f1:
         json.dump(alljson, f1, ensure_ascii=False, indent=4)
