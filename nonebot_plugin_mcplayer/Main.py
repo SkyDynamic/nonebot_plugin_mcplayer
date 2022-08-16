@@ -16,8 +16,8 @@ class Main():
             server_ip = self.json[self.group_id]['server_ip']
             server_name = self.json[self.group_id]['Server_Name']
             server = JavaServer.lookup(server_ip)
-            status = server.status()
             try:
+                status = server.status()
                 for p in status.players.sample:
                     player_list.append(p.name)
                 message = f'------{server_name}当前状态------\n' + f'最大人数：{str(status.players.max)}\n' + f'当前在线人数：{str(status.players.online)}\n' + '当前在线玩家：\n- ' + '\n- '.join(player_list)
