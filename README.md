@@ -12,7 +12,7 @@ _✨ 基于OneBot适配器的[NoneBot2](https://v2.nonebot.dev/)查看MC服务�
 
 ## 功能
 
-- 每天查询今日人品
+- 查看MC服务器在线玩家信息与服务器状态
 
 ## 安装
 
