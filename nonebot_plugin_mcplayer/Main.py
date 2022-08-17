@@ -12,6 +12,7 @@ class Main():
         return self.main(self)
 
     def main(self):
+        global player_list
         if self.json == {} or self.json == False or self.group_id not in self.json:
             return '此群未绑定服务器！'
         if self.json != {}:
@@ -35,6 +36,8 @@ class Main():
             return message
 
     def second_try(self, ip, server_name):
+        global player_list
+        player_list = []
         server_ip = str(ip).split(':')
         if len(server_ip) == 2:
             address = Address(server_ip[0], int(server_ip[1]))
