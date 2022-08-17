@@ -4,12 +4,12 @@ from nonebot.plugin import on_command
 from nonebot.params import CommandArg
 from nonebot.adapters.onebot.v11.event import MessageEvent
 from nonebot.adapters.onebot.v11.message import Message
-from nonebot.adapters.onebot.v11 import GROUP
+from nonebot.adapters.onebot.v11 import GROUP_ADMIN,GROUP
 
 player = on_command('player',aliases={'获取玩家列表','玩家'},priority=50,permission=GROUP)
-bind = on_command("bind", aliases={"绑定"},priority=5,permission=GROUP)
-delete = on_command("delete",priority=5,permission=GROUP)
-modify = on_command("modify",priority=5,permission=GROUP)
+bind = on_command("bind", aliases={"绑定"},priority=5,permission=GROUP_ADMIN)
+delete = on_command("delete",priority=5,permission=GROUP_ADMIN)
+modify = on_command("modify",priority=5,permission=GROUP_ADMIN)
 
 helpmsg = '''----GetServerPlayerPlugin_v1.2.1----
     /bind <服务器IP> <服务器端口(没有则输入0)> <服务器名称> -> 绑定服务器 (等效指令：/绑定)
@@ -109,3 +109,4 @@ def writejson(group_id, Server_host, Server_port, Server_name):
     alljson[str(group_id)] = server_json
     with open('src/config.json', 'w', encoding='utf-8') as f1:
         json.dump(alljson, f1, ensure_ascii=False, indent=4)
+
